@@ -9,12 +9,13 @@ Two implementation
 
 Demo 
 1) Install dependencies
+ - https://github.com/livekit/python-sdks
 
-2) Update the env with credentials 
+3) Update the env with credentials 
 
-3) Navigate to tts_model folder and run 'python main.py dev'
+4) Navigate to tts_model folder and run 'python main.py dev'
 
-4) Call the phone number +1 650 870 9225 
+5) Call the phone number +1 650 870 9225 
  - Use 9080 as verification - its harcoded right now 
  - Discuss the issue like 'My system is running really slow'
 
