@@ -1,0 +1,55 @@
+### TWILIO SCRIPT ###
+(Specific to SIP Trunk Providers)
+
+************************************************************************
+
+### LIVEKIT SCRIPT ###
+
+NOTE - The Livekit sip uri is room specific - we can create multiple copies of room and agents or add all participant in one room
+
+inbound_trunk.py
+Creating inbound trunk...
+sip_trunk_id: "ST_r9EpBGtDfTph"
+name: "Auto Inbound trunk"
+numbers: "+16508709225"
+
+Trunk Created
+Error: trunk_id
+
+Setup complete!
+(livekit) kawaii@Mriduls-MacBook-Air sip % python delete_inbound_trunk.py
+Successfully deleted trunk: ST_r9EpBGtDfTph
+(livekit) kawaii@Mriduls-MacBook-Air sip % python inbound_trunk.py       
+Setting up LiveKit SIP trunk with dynamic room dispatch...
+Creating inbound trunk...
+Trunk Created: ST_tmfbzMuTdSE8
+
+Creating dynamic dispatch rule...
+Successfully created dynamic dispatch rule: sip_dispatch_rule_id: "SDR_oYx6ZXvKK7Y4"
+rule {
+  dispatch_rule_individual {
+    room_prefix: "number-"
+  }
+}
+trunk_ids: "ST_tmfbzMuTdSE8"
+name: "Dynamic Room Dispatch"
+
+
+Setup complete!
+
+
+delete_inbound_trunk.py
+(delete the created LivektiSIP)
+
+
+************************************************************************
+
+### S2S Model ###
+
+custom_main.py 
+(run the Livkit S2S model)
+
+function_tooling.py 
+(Overwrite Livekit function tooling)
+
+************************************************************************

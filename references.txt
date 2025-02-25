@@ -1,0 +1,16 @@
+
+
+SIP Setup - https://drive.google.com/file/d/1tg5nZICq4v5g5fUsHjuUH7p6VNl51QF_/view?usp=sharing
+
+Twilio - 
+1) Elastic Trunks - https://console.twilio.com/us1/develop/sip-trunking/manage/trunks?frameUrl=%2Fconsole%2Fsip-trunking%2Ftrunks%3Fx-target-region%3Dus1&x-target-region=us1
+
+Github - 
+1) Protocols (vars) - https://github.com/livekit/protocol/blob/main/protobufs/livekit_sip.proto
+2) Function Tooling - https://github.com/livekit/agents/blob/main/livekit-agents/livekit/agents/llm/function_context.py
+
+Livekit Python SDK - 
+1) https://docs.livekit.io/python/livekit/index.html
+2) Livekit AI agents - https://docs.livekit.io/agents/voice-agent/function-calling/
+3) Livekit Telephony - https://docs.livekit.io/sip/quickstarts/configuring-sip-trunk/
+
